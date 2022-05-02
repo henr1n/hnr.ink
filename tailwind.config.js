@@ -4,7 +4,8 @@ module.exports = {
     fontFamily: {
       'body': ['Inter']
     },
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 }

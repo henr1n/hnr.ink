@@ -2,3 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .link-button {
+        @apply hover:bg-gradient-to-br from-indigo-700 to-purple-600 bg-zinc-800 w-full rounded-xl px-6 py-4 flex flex-row items-center gap-4 shadow-2xl transform hover:scale-105 hover:-translate-y-1 duration-300 min-w-[225px];
+    }
+
+    .link-button:hover {
+        background-size: 400% 400%;
+        animation: rainbow-gradient 2s ease infinite;
+    }
+
+    @keyframes rainbow-gradient {
+        0%, 100% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+    }    
+}
